@@ -10,8 +10,8 @@ From: ubuntu:lunar
 
 %post
 	## Install Python with optimizations
-	export PYTHON_VERSION_MAJOR=3
-	export PYTHON_VERSION_MINOR_FIRST=11
+	export PYTHON_VERSION_MAJOR=0
+	export PYTHON_VERSION_MINOR_FIRST=0
 	export PYTHON_VERSION_MINOR_SECOND=0
 	export PYTHON_VERSION=${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR_FIRST}.${PYTHON_VERSION_MINOR_SECOND}
 	apt update && apt install -y curl gcc g++ make libc-dev dpkg-dev ca-certificates zlib1g-dev liblzma-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev libbz2-dev
@@ -59,9 +59,9 @@ From: ubuntu:lunar
 %environment
 	export LC_ALL=en_US.UTF-8
 	export SHELL=/bin/bash
-	export PYTHON_VERSION_MAJOR=3
-	export PYTHON_VERSION_MINOR_FIRST=11
-	export PYTHON_VERSION_MINOR_SECOND=0
+	export PYTHON_VERSION_MAJOR
+	export PYTHON_VERSION_MINOR_FIRST
+	export PYTHON_VERSION_MINOR_SECOND
 	export PYTHON_VERSION=${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR_FIRST}.${PYTHON_VERSION_MINOR_SECOND}
 
 %runscript
